@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.header {
+  background-color: coral;
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.header .logo {
+  width: 100px;
+  text-align: center;
+  padding: 5px;
+}
+
+.header .logo img {
+  width: 65px;
+  object-fit: fill;
+}
+
+.header .brand {
+  flex-grow: 1;
+  font-size: 2.5em;
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+}
+
+.header .nav {
+  flex-grow: 5;
+}
+
+.header .nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  height: 80px;
+}
+
+.header .nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  box-sizing: border-box;
+  background-color: coral;
+  margin: 5px;
+  padding: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.header .nav ul li a {
+  text-decoration: none;
+  color: #eee;
+}
+
+.header .nav ul li:hover a {
+  color: #fff;
+}
+
+.content {
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-align: justify;
+}
+
+.footer {
+  background-color: rgb(13, 17, 17);
+  color: floralwhite;
+  min-height: 300px;
+}
